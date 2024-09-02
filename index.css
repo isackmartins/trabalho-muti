@@ -50,6 +50,7 @@ span img{
     background-image:url(img/fundo\ da\ intro.jpg);
     height: 40vh;
     width: 100%;
+    background-size: 100% 150%;
     background-repeat: no-repeat;
     background-position: center;
 
