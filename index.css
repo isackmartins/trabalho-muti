@@ -5,7 +5,7 @@
 }
 /* menu de navegação */
 .container {
-    max-width: 1400px;
+    max-width: 2000px;
     padding: 2%;
     margin: 0 auto;
     background-color:#62AC3F;
@@ -48,5 +48,9 @@ span img{
 /* introdução */
 .introducao{
     background-image:url(img/fundo\ da\ intro.jpg);
-   
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
