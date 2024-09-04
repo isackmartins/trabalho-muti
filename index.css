@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* menu de navegação */
 .container {
     max-width: 2000px;
     padding: 2%;
     margin: 0 auto;
-    background-color:#62AC3F;
+    background-color: #62AC3F;
 }
 
 nav {
@@ -39,19 +40,40 @@ nav ul li a:hover {
     background-color: rgb(132, 231, 132);
 }
 
-span img{
+span img {
     width: 60px;
     height: 60px;
 }
 
 
 /* introdução */
-.introducao{
-    background-image:url(img/fundo\ da\ intro.jpg);
-    height: 40vh;
+header {
+    background-image: url(img/fundo\ da\ intro.jpg);
+    height: 50vh;
     width: 100%;
-    background-size: 100% 150%;
+    background-size: 100% 170%;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
 
+header .introducao{
+
+    margin-left: auto;
+    width: 750px;
+    padding: 30px;
+    
+}
+header .introducao h1{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+   
+}
+
+header .introducao p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
