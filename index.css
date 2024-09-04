@@ -77,3 +77,11 @@ header .introducao p{
     font-size: 14px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+/* Info sobre o Sporte */
+.infoesporte{
+    display: flex;
+    
+
+}
