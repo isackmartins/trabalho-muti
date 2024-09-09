@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI';
+}
+
 /* menu de navegação */
 .container {
     max-width: 2000px;
@@ -54,34 +58,103 @@ header {
     background-size: 100% 170%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
-header .introducao{
+header .introducao {
 
     margin-left: auto;
     width: 750px;
     padding: 30px;
-    
+
 }
-header .introducao h1{
+
+header .introducao h1 {
     color: #fff;
     text-align: center;
     font-size: 20px;
-   
+
 }
 
-header .introducao p{
+header .introducao p {
     color: #fff;
     text-align: center;
     font-size: 14px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 /* Info sobre o Sporte */
-.infoesporte{
+.infoesporte {
     display: flex;
-    
 
+
+}
+
+
+/* footer */
+.footer {
+    padding: 40px;
+    background-color: #62AC3F;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: black;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 80px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    transition: 0.15s;
+    color: #62AC3F;
+
+}
+
+.footer ul {
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+
+
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin: 15px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.5;
+}
+.footer .copyright:hover{
+    opacity: 1;
 }
