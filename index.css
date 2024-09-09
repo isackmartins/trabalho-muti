@@ -84,12 +84,28 @@ header .introducao p {
 }
 
 
+
 /* Info sobre o Sporte */
 .infoesporte {
-    display: flex;
-
-
+display: flex;
+color: #fff;
+background-color: #1b1b1b;
+width:100%;
+padding: 70px;
+text-align: center;
 }
+.regras{
+    width:70%;
+    height: 110%;
+}
+.pontuacao{
+    width:70%;
+}
+
+.vencedores{
+    width:70%;
+}
+
 
 
 /* footer */
