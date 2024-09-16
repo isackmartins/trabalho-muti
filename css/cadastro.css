@@ -49,51 +49,6 @@ span img {
     height: 60px;
 }
 
-/* info sobre nós */
-.sobre {
-    color: #fff;
-    display: flex;
-    max-width: 2000px;
-    background-color: #1b1b1b;
-}
-
-.sobre .article {
-    color: #fff;
-    max-width: 2000px;
-    padding: 3%;
-
-}
-.sobre .article h1{
-    color: #fff;
-    padding: 20px;
-    font-size: 30px;
-
-
-}
-
-.sobre .article .p1 {
-    text-align: left;
-    margin-right:300px ;
-    padding: 20px;
-    font-size: 20px;
-    border-left:3px solid;
-
-}
-
-.sobre .article .p2 {
-    text-align: left;
-    padding: 20px;
-    margin-right:300px ;
-    font-size: 20px;
-    border-left:3px solid;
-
-}
-
-aside img {
-    height: 100%;
-    width: 55vh;
-
-}
 
 
 /* footer */
