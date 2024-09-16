@@ -31,6 +31,9 @@
     <h2>Deixe seu comentario aqui</h2>
      <form name="cadastro" method="post">
             Nome: <input type="text" name="nome"><br>
+            E-mail:<input type="text" name="email"><br>
+            Telefone: <input type="text" name="telefone"><br>
+            Endereço: <input type="text" name="endereco">
     <input type="submit" value="Envidar dados">
     </form>
     </div>
