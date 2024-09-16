@@ -79,7 +79,7 @@ header .introducao h1 {
 header .introducao p {
     color: #fff;
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -98,7 +98,7 @@ text-align: center;
 .regras{
     margin: 2%;
     text-align: justify;
-    
+    font-size: 18px;  
 }
 
 .regras > h2{
@@ -107,6 +107,7 @@ text-align: center;
 .pontuacao{
     margin: 2%;
     text-align: justify;
+    font-size: 18px;
 }
 .pontuacao > h2{
     text-align: center;
@@ -115,6 +116,7 @@ text-align: center;
 .vencedores{
     margin: 2%;
     text-align: justify;
+    font-size: 18px;
 }
 .vencedores > h2{
     text-align: center;
@@ -122,6 +124,11 @@ text-align: center;
 
 
 /* tabela */
+.crono{
+    text-align: center;
+    color: #fff;
+    background-color: #1b1b1b;
+}
 .cronograma {
     display: flex;
     max-width: 2000px;
