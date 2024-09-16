@@ -51,7 +51,7 @@ span img {
 
 /* introdução */
 header {
-    background-image: url(img/fundo\ da\ intro.jpg);
+    background-image: url(../img/fundo\ da\ intro.jpg);
     height: 50vh;
     width: 100%;
     background-size: 100% 170%;
