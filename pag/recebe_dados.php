@@ -1,13 +1,9 @@
 <?php
-if(isset($_POST["nome"]) or isset($_POST["email"]) or isset($_POST["telefone"]) or isset($_POST["endereco"])){
+if(isset($_POST["nome"]) or isset ($_POST["comentario"])){
         $nome = $_POST["nome"];
-        $email = $_POST["email"];
-        $telefone = $_POST["telefone"];
-        $endereco = $_POST["endereco"];
+        $comentario = $_POST["comentario"];
 echo "<h2>Dados recebidos com sucesso!</h2>";
 echo "Usuário: $nome <br>";
-echo "E-Mail: $email <br>" ;
-echo "Telefone: $telefone <br>";
-echo "Endereço: $endereco";
+echo "Comentario: $comentario <br>";
 }
 ?>

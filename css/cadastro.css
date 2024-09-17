@@ -49,7 +49,21 @@ span img {
     height: 60px;
 }
 
+/* formulario */
 
+.article{
+    margin: 100px 770px;
+    text-align: center;
+    background-color: #62AC3F;
+    border-radius: 20px
+}
+
+.form{
+   
+    height: 200px;
+    padding: 40px;
+
+}
 
 /* footer */
 .footer {
