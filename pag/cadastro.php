@@ -31,8 +31,8 @@
         <div class="form">
          <h2>Deixe seu comentario aqui</h2>
           <form name="cadastro" method="post">
-            Nome: <input type="text" name="nome"><br>
-            comentario: <input type="text" name="comentario"><br>
+            <input type="text" name="nome" placeholder="digite seu nome.."><br>
+            <input type="text" name="comentario"placeholder="digite seu comentario.."><br>
             <input type="submit" value="Envidar dados">
     </form>
     </div>

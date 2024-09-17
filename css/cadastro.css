@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(132, 231, 132);
+    background-color: #84e784;
 }
 
 span img {
@@ -52,17 +52,18 @@ span img {
 /* formulario */
 
 .article{
-    margin: 100px 770px;
+    padding:50px;
+    margin: auto;
     text-align: center;
-    background-color: #62AC3F;
-    border-radius: 20px
 }
 
 .form{
-   
+    margin: auto;
     height: 200px;
+    width: 400px;
     padding: 40px;
-
+    background-color: #62AC3F;
+    border-radius: 20px
 }
 
 /* footer */
