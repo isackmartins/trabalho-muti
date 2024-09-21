@@ -65,7 +65,7 @@ header .introducao {
     margin-left: auto;
     width: 750px;
     padding: 30px;
-    
+
 
 }
 
@@ -87,77 +87,94 @@ header .introducao p {
 
 /* Info sobre o Sporte */
 .infoesporte {
-display: flex;
-color: #fff;
-background-color: #1b1b1b;
-width:100%;
-padding: 70px;
-text-align: center;
-
-}
-.regras{
-    margin: 2%;
-    text-align: justify;
-    font-size: 18px;  
-}
-
-.regras > h2{
+    display: flex;
+    color: #fff;
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 70px;
     text-align: center;
+
 }
-.pontuacao{
+
+.regras {
     margin: 2%;
     text-align: justify;
     font-size: 18px;
 }
-.pontuacao > h2{
+
+.regras>h2 {
     text-align: center;
 }
 
-.vencedores{
+.pontuacao {
     margin: 2%;
     text-align: justify;
     font-size: 18px;
 }
-.vencedores > h2{
+
+.pontuacao>h2 {
+    text-align: center;
+}
+
+.vencedores {
+    margin: 2%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.vencedores>h2 {
     text-align: center;
 }
 
 
 /* tabela */
-.crono{
+.crono {
     text-align: center;
     color: #fff;
     background-color: #1b1b1b;
 }
+
 .cronograma {
     display: flex;
     max-width: 2000px;
     padding: 2%;
+    text-align: center;
     margin: 0 auto;
     background-color: #1b1b1b;
     justify-content: space-between;
 
 }
-.cronograma .cro1{
+
+.cronograma .cro1 span {
+    width: 10%;
+    border-left: 3px solid;
+}
+
+.cronograma .cro1 span p {
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.cronograma .cro1 {
     display: flex;
     background-color: #62AC3F;
     align-items: center;
     width: 20%;
     justify-content: space-around;
     border-radius: 10px;
-    
 }
+
 .cronograma .cro1 ul li {
     list-style: none;
-    padding: 10px ;
+    padding: 10px;
     text-decoration: none;
     font-size: 15px;
     color: black;
     font-weight: bold;
 }
 
-.cronograma .cro2{
-    
+.cronograma .cro2 {
+
     display: flex;
     background-color: #62AC3F;
     align-items: center;
@@ -165,18 +182,29 @@ text-align: center;
     justify-content: space-around;
     border-radius: 10px;
 
-    
+
 }
+
 .cronograma .cro2 ul li {
     list-style: none;
-    padding: 10px ;
+    padding: 10px;
     text-decoration: none;
     font-size: 15px;
     color: black;
     font-weight: bold;
 }
-.cronograma .cro3{
-    
+.cronograma .cro2 span {
+    width: 10%;
+    border-left: 3px solid;
+}
+
+.cronograma .cro2 span p {
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.cronograma .cro3 {
+
     display: flex;
     background-color: #62AC3F;
     align-items: center;
@@ -184,37 +212,16 @@ text-align: center;
     justify-content: space-around;
     border-radius: 10px;
 
-    
+
 }
+
 .cronograma .cro3 ul li {
     list-style: none;
-    padding: 10px ;
+    padding: 10px;
     text-decoration: none;
     font-size: 15px;
     color: black;
     font-weight: bold;
-}
-
-.cronograma .cro4{
-    
-    display: flex;
-    background-color: #62AC3F;
-    align-items: center;
-    width: 20%;
-    border-radius: 10px;
-    justify-content: space-around;
-   
-
-    
-}
-.cronograma .cro4 ul li {
-    list-style: none;
-    padding: 10px ;
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    border-right: #1b1b1b ;
 }
 
 
@@ -272,15 +279,18 @@ text-align: center;
     opacity: 0.5;
     padding: 0 15px;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     opacity: 1;
 }
-.footer .copyright{
+
+.footer .copyright {
     margin: 15px;
     text-align: center;
     font-size: 13px;
     opacity: 0.5;
 }
-.footer .copyright:hover{
+
+.footer .copyright:hover {
     opacity: 1;
 }
