@@ -53,8 +53,10 @@ span img {
 
 .article{
     padding:50px;
+
     margin: auto;
     text-align: center;
+    background-color: #1b1b1b;
 }
 
 .form{
@@ -64,6 +66,29 @@ span img {
     padding: 40px;
     background-color: #62AC3F;
     border-radius: 20px
+}
+
+/* comentarios */
+
+.coment{
+    display: flex;
+    max-width: 2000px;
+    padding: 2%;
+    text-align: justify;
+    margin: 0 auto;
+    background-color: #1b1b1b;
+    justify-content: space-between;
+}
+.comentario1{
+    padding: 2%;
+    margin: 5%;
+    background-color: #62AC3F;
+    width: 25%;
+    text-align: center;
+    text-align: 20px;
+    border-radius: 20px;
+    height: auto;
+
 }
 
 /* footer */

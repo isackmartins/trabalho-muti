@@ -138,7 +138,7 @@ header .introducao p {
     display: flex;
     max-width: 2000px;
     padding: 2%;
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
     background-color: #1b1b1b;
     justify-content: space-between;
