@@ -1,25 +1,12 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/cadastro.css">
-</head>
-<body>
+<?php
+// Define o caminho para o arquivo de comentários
+$file = 'comments.txt';
 
-<div class="coment";>
-      <div class ="comentario1";>
-        <?php
-        if(isset($_POST["comentario"])){
-        $comentario = $_POST["comentario"];
-        echo "<h2>Comentaro 1</h2>";
-        echo "Comentario: $comentario <br>";
-        }
-        ?>   
-         </div>
-</div>
+// Lê os comentários do arquivo
+$comments = file($file, FILE_IGNORE_NEW_LINES);
 
-</body>
-</html>
+// Retorna os comentários em formato JSON
+header('Content-Type: application/json');
+echo json_encode($comments);
+?>

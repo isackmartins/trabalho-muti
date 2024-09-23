@@ -20,25 +20,34 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li> <a href="">Feedback</a></li>
+                <li> <a href="#">Feedback</a></li>
                 <li> <a href="sobrenos.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </div>
 
 
-    <div class="article">
-        <div class="form">
-         <h2>Deixe seu comentario aqui</h2>
-          <form name="cadastro" method="post">
-            <input type="text" name="nome" placeholder="digite seu nome.."><br>
-            <input type="text" name="comentario"placeholder="digite seu comentario.."><br>
-            <input type="submit" value="Envidar dados">
+    <form id="commentForm">
+        <textarea id="comment" rows="4" required placeholder="Digite seu comentário..."></textarea>
+        <br>
+        <button type="submit">Enviar</button>
     </form>
-    </div>
-    </div>
-        <?php  include("recebe_dados.php")?>
 
+
+    <div id="commentsContainer"></div>
+
+    <?php
+// Define o caminho para o arquivo de comentários
+$file = 'comments.txt';
+
+// Recebe o comentário
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $comment = htmlspecialchars($_POST['comment']); // Sanitiza o comentário
+
+    // Adiciona o comentário ao arquivo
+    file_put_contents($file, $comment . PHP_EOL, FILE_APPEND);
+}
+?>
 
 
 
@@ -56,6 +65,45 @@
         <p class="copyright">2024 designed by: Isack Martins e Guilherme bosso</p>
 
     </footer>
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const comment = document.getElementById('comment').value;
+
+            fetch('cadastro.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `comment=${encodeURIComponent(comment)}`
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('comment').value = ''; // Limpa o campo
+                loadComments(); // Recarrega os comentários
+            });
+        });
+
+        function loadComments() {
+            fetch('recebe_dados.php')
+                .then(response => response.json())
+                .then(data => {
+                    const commentsContainer = document.getElementById('commentsContainer');
+                    commentsContainer.innerHTML = ''; // Limpa os comentários antigos
+
+                    data.forEach(comment => {
+                        const div = document.createElement('div');
+                        div.className = 'comment';
+                        div.textContent = comment;
+                        commentsContainer.appendChild(div);
+                    });
+                });
+        }
+
+        // Carrega comentários ao iniciar
+        loadComments();
+    </script>
+
 
 </body>
 

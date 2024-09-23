@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI';
+    background-color: #1b1b1b;
 }
 
 /* menu de navegação */
@@ -49,52 +50,81 @@ span img {
     height: 60px;
 }
 
-/* formulario */
+/* fomulario */
 
-.article{
-    padding:50px;
 
-    margin: auto;
+form {
+    margin: 60px 40% 80px;
+    padding: 10px;
     text-align: center;
-    background-color: #1b1b1b;
-}
-
-.form{
-    margin: auto;
-    height: 200px;
-    width: 400px;
-    padding: 40px;
     background-color: #62AC3F;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
-/* comentarios */
+textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
-.coment{
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#commentsContainer {
     display: flex;
     max-width: 2000px;
-    padding: 2%;
+    padding: 5%;
     text-align: justify;
-    margin: 0 auto;
     background-color: #1b1b1b;
     justify-content: space-between;
 }
-.comentario1{
-    padding: 2%;
-    margin: 5%;
-    background-color: #62AC3F;
-    width: 25%;
-    text-align: center;
-    text-align: 20px;
-    border-radius: 20px;
-    height: auto;
 
+.comment {
+    text-align: center;
+    background-color: #62AC3F;
+    color: #fff;
+    font-size: 19px;
+    max-width: 2000px;
+    border-radius: 4px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.comment:hover {
+    transform: scale(1.02);
+}
+
+.comment p {
+    margin: 0;
+    color: #555;
+}
+
+.comment .timestamp {
+    font-size: 0.9em;
+    color: #aaa;
+    text-align: right;
 }
 
 /* footer */
+
 .footer {
     padding: 40px;
     background-color: #62AC3F;
+    margin-bottom:80px ;
 }
 
 .footer .social {
