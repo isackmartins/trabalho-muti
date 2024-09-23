@@ -96,7 +96,7 @@ button:hover {
     text-align: center;
     background-color: #62AC3F;
     color: #fff;
-    font-size: 19px;
+    font-size: 15px;
     max-width: 2000px;
     border-radius: 4px;
     padding: 30px 20px;
@@ -110,6 +110,7 @@ button:hover {
 
 .comment p {
     margin: 0;
+    font-size: x-small;
     color: #555;
 }
 
